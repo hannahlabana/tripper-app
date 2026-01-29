@@ -272,7 +272,7 @@ export default function Page() {
           `https://api.countrystatecity.in/v1/countries/${selected.iso2}/states`,
           {
             headers: {
-              "X-CSCAPI-KEY": process.env.NEXT_PUBLIC_CSC_API_KEY || "",
+              "X-CSCAPI-KEY": "51ca5492f35cbcc898b90404a54473a1343a56cf3a6b03c72c37296191d10f45",
             },
           }
         );
