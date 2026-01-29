@@ -227,7 +227,7 @@ export default function Page() {
       try {
         const response = await fetch("https://api.countrystatecity.in/v1/countries", {
           headers: {
-            "X-CSCAPI-KEY": process.env.NEXT_PUBLIC_CSC_API_KEY || "",
+            "X-CSCAPI-KEY": "51ca5492f35cbcc898b90404a54473a1343a56cf3a6b03c72c37296191d10f45",
           },
         });
 
@@ -407,7 +407,7 @@ export default function Page() {
   return (
     <div className="mx-auto max-w-xl p-6">
       <Script
-        src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`}
+        src={`https://maps.googleapis.com/maps/api/js?key=AIzaSyDS8GCWpPlHQrDi3fgqk-4qlT9B0IsxMG4&libraries=places`}
         strategy="afterInteractive"
         onLoad={() => setMapsReady(true)}
       />
